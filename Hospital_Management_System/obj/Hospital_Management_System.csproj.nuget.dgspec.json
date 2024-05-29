@@ -1,0 +1,320 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Hospital_Management_System.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Business_Layer\\Business_Layer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Business_Layer\\Business_Layer.csproj",
+        "projectName": "Business_Layer",
+        "projectPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Business_Layer\\Business_Layer.csproj",
+        "packagesPath": "C:\\Users\\pagad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Business_Layer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pagad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\ModelLayer\\ModelLayer.csproj": {
+                "projectPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\ModelLayer\\ModelLayer.csproj"
+              },
+              "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Repository_Layer\\Repository_Layer.csproj": {
+                "projectPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Repository_Layer\\Repository_Layer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.26.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Hospital_Management_System.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Hospital_Management_System.csproj",
+        "projectName": "Hospital_Management_System",
+        "projectPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Hospital_Management_System.csproj",
+        "packagesPath": "C:\\Users\\pagad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pagad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Business_Layer\\Business_Layer.csproj": {
+                "projectPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Business_Layer\\Business_Layer.csproj"
+              },
+              "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\ModelLayer\\ModelLayer.csproj": {
+                "projectPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\ModelLayer\\ModelLayer.csproj"
+              },
+              "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Repository_Layer\\Repository_Layer.csproj": {
+                "projectPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Repository_Layer\\Repository_Layer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.26.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\ModelLayer\\ModelLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\ModelLayer\\ModelLayer.csproj",
+        "projectName": "ModelLayer",
+        "projectPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\ModelLayer\\ModelLayer.csproj",
+        "packagesPath": "C:\\Users\\pagad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\ModelLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pagad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.26.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Repository_Layer\\Repository_Layer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Repository_Layer\\Repository_Layer.csproj",
+        "projectName": "Repository_Layer",
+        "projectPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Repository_Layer\\Repository_Layer.csproj",
+        "packagesPath": "C:\\Users\\pagad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Repository_Layer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pagad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\ModelLayer\\ModelLayer.csproj": {
+                "projectPath": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\ModelLayer\\ModelLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.26.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
