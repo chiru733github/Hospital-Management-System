@@ -43,6 +43,7 @@ namespace Repository_Layer.Services
                 Insertcmd.Parameters.AddWithValue("@Experience",Dmodel.Experience);
                 Insertcmd.Parameters.AddWithValue("@DoctorImage", Dmodel.DoctorImage);
                 Insertcmd.ExecuteNonQuery();
+
                 return true;
 
             }

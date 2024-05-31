@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<ModelLayer.Models.DoctorModel>
-
+@using Microsoft.AspNetCore.Http
 @{
     ViewData["Title"] = "GetAllDoctorDetails";
 }
@@ -45,9 +45,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.DoctorImage)
             </th>
-            <th>
+           @*  <th>
                 @Html.DisplayNameFor(model => model.IsTrash)
-            </th>
+            </th> *@
             <th></th>
         </tr>
     </thead>
@@ -87,13 +87,18 @@
             <td>
                 @Html.DisplayFor(modelItem => item.DoctorImage)
             </td>
-            <td>
+            @* <td>
                 @Html.DisplayFor(modelItem => item.IsTrash)
-            </td>
+            </td> *@
             <td>
-                    @Html.ActionLink("Edit", "UpdateDoctor", new { id=item.Id  }) |
-                    @Html.ActionLink("Details", "GetByIdDoctor", new { id=item.Id }) |
-                    @Html.ActionLink("Delete", "DeleteDoctorById", new { id=item.Id })
+                @if(@Context.Session.GetInt32("patientId")>0){
+                    @Html.ActionLink("Book Appointment", "GetByIdDoctor", new { id=item.Id })
+                }
+                else{
+                        @Html.ActionLink("Edit", "UpdateDoctor", new { id = item.Id }); <span>|</span> 
+                        @Html.ActionLink("Details", "GetByIdDoctor", new { id = item.Id }); <span>|</span>
+                        @Html.ActionLink("Delete", "DeleteDoctorById", new { id = item.Id });
+                    }
             </td>
         </tr>
 }

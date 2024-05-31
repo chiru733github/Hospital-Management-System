@@ -25,7 +25,7 @@ namespace Hospital_Management_System.Controllers
         public IActionResult AddDoctor(DoctorModel Doctor)
         {
             bool result = doctorBusiness.AddDoctor(Doctor);
-            if(result) return RedirectToAction("AddDoctor");
+            if(result) return RedirectToAction("");
             return View("Index");
         }
         [HttpGet]
@@ -39,6 +39,7 @@ namespace Hospital_Management_System.Controllers
         [HttpGet]
         public IActionResult GetByIdDoctor(int id) 
         {
+            HttpContext.Session.SetInt32("DoctorId",id);
             DoctorModel doctor = doctorBusiness.GetDoctorById(id);
             if(doctor!=null) return View(doctor);
             return View("Index");

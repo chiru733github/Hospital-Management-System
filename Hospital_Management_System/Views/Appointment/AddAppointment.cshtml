@@ -1,5 +1,5 @@
 ﻿@model ModelLayer.Models.AppointmentModel
-
+@using Microsoft.AspNetCore.Http
 @{
     ViewData["Title"] = "AddAppointment";
 }
@@ -12,34 +12,34 @@
     <div class="col-md-4">
         <form asp-action="AddAppointment">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+           @*  <div class="form-group">
                 <label asp-for="AMId" class="control-label"></label>
                 <input asp-for="AMId" class="form-control" />
                 <span asp-validation-for="AMId" class="text-danger"></span>
-            </div>
+            </div> *@
             <div class="form-group">
                 <label asp-for="Doctorid" class="control-label"></label>
-                <input asp-for="Doctorid" class="form-control" />
+                <input asp-for="Doctorid" class="form-control" value="@Context.Session.GetInt32("DoctorId")"/>
                 <span asp-validation-for="Doctorid" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Patientid" class="control-label"></label>
-                <input asp-for="Patientid" class="form-control" />
+                <input asp-for="Patientid" class="form-control" value="@Context.Session.GetInt32("patientId")" />
                 <span asp-validation-for="Patientid" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="date" class="control-label"></label>
-                <input asp-for="date" type="date" class="form-control" />
+                <input asp-for="date" type="date" id="Appointmentdate" class="form-control" onchange="validateAppointmentDate()" />
                 <span asp-validation-for="Patientid" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Starttime" class="control-label"></label>
-                <input asp-for="Starttime" type="time" class="form-control" />
+                <input asp-for="Starttime" type="time" id="start" class="form-control" />
                 <span asp-validation-for="Starttime" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Endtime" class="control-label"></label>
-                <input asp-for="Endtime" type="time" class="form-control" />
+                <input asp-for="Endtime" type="time" id="end" class="form-control" />
                 <span asp-validation-for="Endtime" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -57,4 +57,4 @@
 <div>
     <a asp-action="GetAllAppointmentDetails">Back to List</a>
 </div>
-
+<script src="~/js/AddAppointment.js" asp-append-version="true"></script>

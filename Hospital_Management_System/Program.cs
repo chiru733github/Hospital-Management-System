@@ -19,7 +19,12 @@ namespace Hospital_Management_System
             builder.Services.AddTransient<IAppointmentBL, AppointmentBL>();
             builder.Services.AddTransient<IAppointmentRepo, AppointmentRepo>();
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddSession(options =>
+            {
+                options.IOTimeout = TimeSpan.FromMinutes(60);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -36,7 +41,7 @@ namespace Hospital_Management_System
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseSession();
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

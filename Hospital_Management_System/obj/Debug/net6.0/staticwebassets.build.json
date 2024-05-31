@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "23qHHQMMSpHskSC5At+R62spNeo0D1Bv0sxkSjQE5D4=",
+  "Hash": "ZSYg5HemqqqFnU9blJl56kAQwkdjlKbWTnaeROOyVhw=",
   "Source": "Hospital_Management_System",
   "BasePath": "_content/Hospital_Management_System",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\js\\AddAppointment.js",
+      "SourceId": "Hospital_Management_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\",
+      "BasePath": "_content/Hospital_Management_System",
+      "RelativePath": "js/AddAppointment.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\AddAppointment.js"
     },
     {
       "Identity": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\js\\site.js",

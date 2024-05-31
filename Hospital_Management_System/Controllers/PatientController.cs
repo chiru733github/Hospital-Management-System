@@ -1,4 +1,5 @@
-﻿using Business_Layer.Interfaces;
+﻿using System.Reflection.Metadata.Ecma335;
+using Business_Layer.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Models;
 using NuGet.Protocol.Plugins;
@@ -103,6 +104,7 @@ namespace Hospital_Management_System.Controllers
         [HttpPost]
         public IActionResult Login(LoginPatient patient)
         {
+            HttpContext.Session.SetInt32("patientId",patient.Id);
             PatientModel result = patientBusiness.Login(patient);
             if (result == null)
             {

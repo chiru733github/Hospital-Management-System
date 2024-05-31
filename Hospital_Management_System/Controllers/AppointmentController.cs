@@ -25,7 +25,9 @@ namespace Hospital_Management_System.Controllers
         public IActionResult AddAppointment(AppointmentModel AM)
         {
             bool result = appointmentBL.AddAppointment(AM);
-            if (result) return RedirectToAction("AddAppointment");
+            int patientId = (int)@HttpContext.Session.GetInt32("patientId");
+            if (result && patientId > 0) return RedirectToAction("Doctor", "GetAllDoctorDetails");
+            else if (result) return RedirectToAction("AddAppointment");
             return View("Index");
         }
         [HttpGet]

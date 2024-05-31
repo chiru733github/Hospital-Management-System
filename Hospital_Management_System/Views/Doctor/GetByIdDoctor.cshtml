@@ -76,15 +76,24 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.DoctorImage)
         </dd>
-        <dt class = "col-sm-2">
+        @* <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.IsTrash)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.IsTrash)
-        </dd>
+        </dd> *@
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Details", "GetByIdDoctor", new { id = Model.Id }) |
-    <a asp-action="GetAllDoctorDetails">Back to List</a>
+    @if(Context.Session.GetInt32("patientId")>0)
+    {
+        <a class="btn btn-primary" asp-controller="Appointment" asp-action="AddAppointment">Appointment</a>
+        <a asp-action="GetAllDoctorDetails">Back to List</a>
+
+    }
+    else
+    {
+        @Html.ActionLink("Details", "GetByIdDoctor", new { id = Model.Id });<span>|</span>
+        <a asp-action="GetAllDoctorDetails">Back to List</a>
+    }
 </div>

@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\js\\AddAppointment.js",
+      "PackagePath": "staticwebassets\\js\\AddAppointment.js"
+    },
+    {
       "Id": "C:\\Users\\pagad\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

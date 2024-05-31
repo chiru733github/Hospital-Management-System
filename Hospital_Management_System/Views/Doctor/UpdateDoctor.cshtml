@@ -13,8 +13,8 @@
         <form asp-action="UpdateDoctor">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
+                <label asp-for="Id" class="control-label" ></label>
+                <input asp-for="Id" class="form-control" readonly/>
                 <span asp-validation-for="Id" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -67,12 +67,12 @@
                 <input asp-for="DoctorImage" class="form-control" />
                 <span asp-validation-for="DoctorImage" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
+            @* <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="IsTrash" /> @Html.DisplayNameFor(model => model.IsTrash)
                 </label>
-            </div>
-            <div class="form-group">
+            </div> *@
+            <div class="form-group mt-4 mb-4" align="center">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>

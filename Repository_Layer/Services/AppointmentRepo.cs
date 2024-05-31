@@ -46,12 +46,13 @@ namespace Repository_Layer.Services
             }
             catch (Exception ex)
             {
-                throw ex;
+                Console.WriteLine(ex.Message);
             }
             finally
             {
                 conn.Close();
             }
+            return false;
         }
 
         public List<AppointmentModel> GetAllAppointment()
