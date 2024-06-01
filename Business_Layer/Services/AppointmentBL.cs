@@ -24,5 +24,9 @@ namespace Business_Layer.Services
         {
             return _appointmentRepo.GetAllAppointment();
         }
+        public List<DoctorWithPatient> GetDoctorWithPatients()
+        {
+            return _appointmentRepo.GetDoctorWithPatients();
+        }
     }
 }

@@ -11,5 +11,6 @@ namespace Business_Layer.Interfaces
     {
         bool AddAppointment(AppointmentModel AMmodel);
         List<AppointmentModel> GetAllAppointment();
+        List<DoctorWithPatient> GetDoctorWithPatients();
     }
 }

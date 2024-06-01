@@ -19,12 +19,12 @@
             </div> *@
             <div class="form-group">
                 <label asp-for="Doctorid" class="control-label"></label>
-                <input asp-for="Doctorid" class="form-control" value="@Context.Session.GetInt32("DoctorId")"/>
+                <input asp-for="Doctorid" class="form-control" value="@Context.Session.GetInt32("DoctorId")" readonly/>
                 <span asp-validation-for="Doctorid" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Patientid" class="control-label"></label>
-                <input asp-for="Patientid" class="form-control" value="@Context.Session.GetInt32("patientId")" />
+                <input asp-for="Patientid" class="form-control" value="@Context.Session.GetInt32("patientId")" readonly/>
                 <span asp-validation-for="Patientid" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -34,12 +34,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="Starttime" class="control-label"></label>
-                <input asp-for="Starttime" type="time" id="start" class="form-control" />
+                <input asp-for="Starttime" type="time" id="start" class="form-control" onchange="EndTimeSetting(this.value)" />
                 <span asp-validation-for="Starttime" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Endtime" class="control-label"></label>
-                <input asp-for="Endtime" type="time" id="end" class="form-control" />
+                <input asp-for="Endtime" type="time" id="end" class="form-control"/>
                 <span asp-validation-for="Endtime" class="text-danger"></span>
             </div>
             <div class="form-group">

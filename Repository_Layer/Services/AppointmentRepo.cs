@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using ModelLayer.Models;
 using Repository_Layer.Interfaces;
+using System.Reflection;
+using System.Net;
 
 namespace Repository_Layer.Services
 {
@@ -81,6 +83,49 @@ namespace Repository_Layer.Services
                         AMlist.Add(appointment);
                     }
                     return AMlist;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        public List<DoctorWithPatient> GetDoctorWithPatients()
+        {
+            List<DoctorWithPatient> DWPlist = new List<DoctorWithPatient>();
+            try
+            {
+                if (conn != null)
+                {
+                    conn.Open();
+                    SqlCommand GetList = new SqlCommand("getDoctorwithPatientDetails", conn);
+                    SqlDataReader reader = GetList.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        DoctorWithPatient appointment = new DoctorWithPatient()
+                        {
+                            DoctorName = (string)reader["DoctorNames"],
+                            DoctorImage = (string)reader["DoctorImages"],
+                            PatientId = (int)reader["PatientID"],
+                            PatientName = (string)reader["PatientName"],
+                            PatientEmail = (string)reader["PatientEmail"],
+                            PhoneNumber = (string)reader["PhoneNumber"],
+                            PatientAge = (int)reader["PatientAge"],
+                            Gender = (string)reader["Gender"],
+                            Address = (string)reader["PatientAddress"],
+                            PatientImage = (string)reader["PatientImage"],
+                            BloodGroup = (string)reader["BloodGroup"],
+                            Concern = (string)reader["Concern"]
+                        };
+
+                        DWPlist.Add(appointment);
+                    }
+                    return DWPlist;
                 }
                 return null;
             }
